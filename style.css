@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("./assets/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background: #ffffff;
+  color: #333333;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 40px 20px 30px 20px;
+  gap: 30px;
+  z-index: 10;
+  box-shadow: 0 5px 20px #00000040;
+}
+
+.black-filter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000050;
+  backdrop-filter: blur(50px);
+  z-index: -10;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.text {
+  font-size: 14px;
+  color: #666666;
+}
+
+.text span {
+  font-weight: 500;
+}
+
+.controller {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #28A745;
+  box-shadow: 0 7px 8px #28A74530;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 5px 8px #28A74560;
+  border: 2px solid #28A745;
+  background: #eeeeee;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #28A745;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 7px 8px #28A74530;
+  transition: background .2s;
+}
+
+.button:hover {
+  background: #24963f;
+  box-shadow: 0 5px 8px #28A74560;
+}
+
+.button:active {
+  background: #1d7531;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list-item {
+  padding: 5px 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  transition: background .2s;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  background: #AED2B6;
+}
+
+.list-item span {
+  font-weight: 500;
+}
+
+.copyright {
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  padding: 10px;
+}
+
+.copyright a {
+  font-weight: 600;
+  color: #666666;
+  text-decoration: underline;
+}
+
+
+
+
+@media(max-width: 600px) {
+  .container {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media(min-width: 1336px) {
+  .container {
+    width: 600px;
+    padding: 50px 30px 40px 30px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .input {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 3px solid #28A745;
+  }
+
+  .input:focus {
+    border: 3px solid #28A745;
+  }
+
+  .input::placeholder {
+    font-size: 18px;
+  }
+
+  .list-item {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+}
+
+/*
+ 
+- Barchasini tozalash tugmasini,
+- Bittalab o'chirish tugmasini,
+- Vazifa bajarildi tugmasini 
+
+qo'shgandan keyin ularga ishlov berish kerak.
+
+*/

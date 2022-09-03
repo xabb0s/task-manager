@@ -164,6 +164,33 @@ ul li {
     border-radius: 0;
     box-shadow: none;
   }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .list {
+    gap: 10px;
+  }
+
+  .list-item {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
 }
 
 @media(min-width: 1336px) {
